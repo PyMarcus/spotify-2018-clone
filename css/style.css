@@ -1,0 +1,78 @@
+body{
+    background-image: url(../imagens/capa.png),
+                                  url(../imagens/ruido.png),
+                                  linear-gradient(50deg, #ff4169, #7c26f8);
+    background-attachment:fixed;
+}
+
+
+html, body, #home{
+    height: 100%;
+
+}
+
+/*
+    HEADER
+*/
+nav.tnavbar{
+    background:rgba(0, 0, 0, 0.6);
+    padding:15px 0px;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #9bf0e1;
+    text-decoration: none;
+    list-style: none;
+}
+
+.navbar-light .navbar-toggler{
+    color: white;
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+
+/*
+    Section
+*/
+
+.intro{
+    text-align: center;
+}
+
+/*
+    Typography
+*/
+h1{
+    font-weight: 900;
+    color: white;
+    letter-spacing: -0.05em;
+    margin-bottom: 50px;
+}
+
+/* Para telas pequenas (por exemplo, celulares) */
+@media  screen and (max-width: 600px) {
+    h1{
+        font-size: 3em !important;
+    }
+  }
+  
+  /* Para telas médias (por exemplo, tablets) */
+  @media  screen and (min-width: 601px) and (max-width: 1024px) {
+    h1{
+        font-size: 4em !important;
+    }
+  }
+  
+  /* Para telas grandes (por exemplo, desktops) */
+  @media  screen and (min-width: 1025px) {
+    h1{
+        font-size: 6em !important;
+    }
+  }
+  
