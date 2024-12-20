@@ -8,7 +8,32 @@ body{
 
 html, body, #home{
     height: 100%;
+}
 
+html, body{
+    overflow-x: hidden;
+}
+
+/* Estilizar o trilho da barra de rolagem */
+::-webkit-scrollbar {
+    width: 12px;  /* Define a largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.557);  /* Cor do trilho */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(190, 50, 171);  /* Cor do polegar da barra de rolagem */
+    border-radius: 10px;
+    border: 2px solid #753396;  /* Borda ao redor do polegar */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(230, 20, 202);  /* Cor do polegar ao passar o mouse */
+    border-radius: 10px;
+    border: 2px solid #753396;  /* Borda ao redor do polegar no hover */
 }
 
 /*
@@ -38,6 +63,36 @@ nav.tnavbar{
 
 
 /*
+    Buttons logo
+*/
+
+.btn-custom{
+    color: white;
+    border-radius: 500px;
+    -webkit-border-radius:500px;
+    -moz-border-radius:500px;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s;
+    padding: 10px 20px;
+}
+
+.btn-purple{
+    background: #7c25f8;
+}
+.btn-purple:hover{
+    background: #6207e3;
+    color: white;
+}
+.btn-white{
+    border: 2px solid white;
+
+}
+.btn-white:hover{
+    background-color: white;
+    color:black ;
+}
+
+/*
     Section
 */
 
@@ -55,10 +110,43 @@ h1{
     margin-bottom: 50px;
 }
 
+h2{
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    color: #7c25f8;
+}
+
+/*
+    Content
+*/
+#services{
+    background: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#services2 .row{
+    color: white;
+}
+
+.rotate{
+    transform: rotate(30deg);
+    padding-left: 80px;
+}
+
+.albumn{
+    padding: 10px 0px;
+}
+
 /* Para telas pequenas (por exemplo, celulares) */
 @media  screen and (max-width: 600px) {
     h1{
         font-size: 3em !important;
+    }
+
+    .btn-custom{
+        margin: 10px 15px;
     }
   }
   
